@@ -1,0 +1,39 @@
+---
+title: "Chapter _XXX_ Code Examples"
+author: "Dan MacLean"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  bookdown::html_document2:
+    toc: true
+    fig_caption: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Topic Title Here
+
+Some explanatory text ... 
+
+```{r, label1, fig.cap="A caption for the figure", fig.align='center', fig.height=6, fig.width=6}
+library(ggplot2)
+
+ggplot(diamonds) +  
+  aes(cut,price) + 
+  geom_jitter(aes(colour=color), position=position_dodge(width=0.5) ) + 
+  geom_boxplot( aes(colour=color), position=position_dodge() )
+
+```
+## Sub-Topic
+
+some text...
+
+### Sub-Sub-Topic
+
+more text
+
+
+# Second Topic Here
+
+further explanatory text

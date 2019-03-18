@@ -1,0 +1,4 @@
+name: r_book code example template
+description: >
+   Template for the code examples in R Bioinformatics Cookbook
+create_dir: FALSE
