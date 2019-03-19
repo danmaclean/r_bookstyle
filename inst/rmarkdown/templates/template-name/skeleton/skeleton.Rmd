@@ -6,6 +6,7 @@ output:
   bookdown::html_document2:
     toc: true
     fig_caption: true
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
